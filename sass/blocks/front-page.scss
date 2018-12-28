@@ -56,6 +56,21 @@
 
   }
 
+  .front-page__new-blocks {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 0;
+
+    .front-page__left {
+      flex-basis: 65.7%;
+    }
+
+    .front-page__right {
+      flex-basis: calc(100% - 65.7% - 30px);
+    }
+
+  }
+
   .front-page__live {
 
     .front-page__left {

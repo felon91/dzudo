@@ -1,0 +1,63 @@
+.birthday {
+
+  .birthday__title {
+    font-size: 1.75rem;
+    line-height: 1.875rem;
+    font-weight: 600;
+    margin: 0 0 25px;
+  }
+
+  .birthday__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .birthday__element {
+    display: flex;
+    flex-basis: 48%;
+    margin-bottom: 30px;
+  }
+
+  .birthday__img {
+    flex-basis: 130px;
+    flex-shrink: 0;
+    margin-right: 20px;
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+  }
+
+  .birthday__info {
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.875rem;
+      margin: 5px 0;
+
+      span {
+        color: $blue;
+      }
+
+    }
+
+    .birthday__name {
+      font-size: 1.25rem;
+      line-height: 1.5625rem;
+      font-weight: 600;
+      margin-top: -3px;
+    }
+
+  }
+
+  .birthday__all {
+    @include btn() {
+      max-width: 451px;
+    };
+  }
+
+}
+
