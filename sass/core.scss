@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+html {
+	font-size: 16px;
+	color: $black;
+}
+
+@media (max-width: 880px) {
+
+	html {
+		font-size: 14px;
+	}
+
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	//-webkit-font-smoothing: antialiased;
+    //-moz-osx-font-smoothing: grayscale;
+	hyphens: auto;
+}
+
+.container {
+	@include min-max(320px, 100%, 0);
+}
+
+.wrap {
+	@include min-max(320px, 1140px, 15px);
+}
+
+textarea, input {
+	font-family: 'Open Sans';
+}
+
+@media (min-width: 320px) {
+
+
+	.fancybox-show-thumbs {
+
+		.fancybox-inner {
+			right: 0 !important;
+			bottom: 95px;
+		}
+
+	}
+
+}
+
+	.my-fancybox {
+
+		.fancybox-thumbs {
+			top: auto;
+			width: auto;
+			bottom: 0;
+			left: 0;
+			right : 0 !important;
+			height: 110px;
+			padding: 10px 10px 5px 10px;
+			box-sizing: border-box;
+			background: transparent;
+		}
+
+		.fancybox-thumbs-x {
+			overflow-x: hidden;
+		}
+
+		.fancybox-toolbar {
+			right: 10px;
+			top: 10px;
+		}
+
+		.fancybox-button {
+			width: 47px;
+			height: 47px;
+			box-sizing: border-box;
+			padding: 0;
+			background-color: transparent;
+		}
+
+		.fancybox-navigation {
+
+			.fancybox-button--arrow_left {
+				width: 34px;
+				height: 64px;
+				padding: 0;
+				left: 10px;
+			}
+
+			.fancybox-button--arrow_right {
+				width: 34px;
+				height: 64px;
+				padding: 0;
+				right: 10px;
+			}
+
+		}
+
+		.fancybox-thumbs>ul>li {
+			width: 160px;
+			height: 90px;
+			margin: 2px 15px;
+		}
+
+	}
+
+.clear {
+	@include clearfix();
+}

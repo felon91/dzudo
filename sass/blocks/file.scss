@@ -1,0 +1,26 @@
+.file {
+  margin: 25px 0;
+
+  a {
+    background: url('../img/pdf.png') 10px center no-repeat;
+    border-bottom: none !important;
+    background-color: #f3f3f3;
+    padding: 7px 25px 7px 50px;
+    line-height: 1.625rem;
+    display: inline-block;
+
+    &:hover {
+
+      span {
+        border-bottom-color: transparent;
+      }
+
+    }
+
+    span {
+      border-bottom: 1px solid $blue;
+    }
+
+  }
+
+}

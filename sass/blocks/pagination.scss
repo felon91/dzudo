@@ -1,0 +1,43 @@
+.pagination {
+  margin: 20px 0;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  li {
+    flex-basis: 30px;
+    flex-shrink: 0;
+  }
+
+  a {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    color: $black;
+    width: 100%;
+    text-align: center;
+    border-radius: 50%;
+    padding: 4px 0;
+
+    &:hover {
+      background-color: #acacac;
+      color: $white;
+    }
+
+  }
+  
+  .pagination__element--active {
+
+    a {
+      background-color: #acacac;
+      color: $white;
+    }
+
+  }
+
+}

@@ -1,0 +1,17 @@
+.opacity {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  opacity: 0;
+  transition-duration: 500ms;
+  transition-property: opacity;
+}
+
+.opacity--active {
+  opacity: 1;
+  z-index: 49;
+}

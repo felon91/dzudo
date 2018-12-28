@@ -1,0 +1,187 @@
+.contact {
+  background-color: $white;
+  padding: 5px 30px 20px 30px;
+
+  .contact__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact__block {
+
+    p {
+      font-size: 1rem;
+      line-height: 1.625rem;
+      margin: 20px 0;
+
+      span {
+        color: #8b8a8a;
+        font-size: 1.125rem;
+      }
+
+    }
+
+    a {
+      border-bottom: 1px solid $blue;
+      text-decoration: none;
+      color: $black;
+
+      &:hover {
+        border-bottom-color: transparent;
+        color: $sub-menu-blue;
+      }
+
+    }
+
+  }
+
+  .contact__img {
+    flex-basis: 41.5%;
+    float: none;
+    margin-top: 20px;
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+  }
+
+  .contact__phone {
+    margin: 12px 0;
+    padding-left: 50px;
+    box-sizing: border-box;
+    background: url('../img/mobile-phone.svg') left center no-repeat;
+    background-size: 20px;
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      font-size: 1.5rem;
+      line-height: 2.9375rem;
+      color: $black;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: none;
+
+
+      &:hover {
+        color: $sub-menu-blue;
+      }
+
+    }
+
+    span {
+      color: #8b8a8a;
+      font-size: 1.125rem;
+    }
+
+  }
+
+  .contact__mail {
+    margin: 12px 0;
+
+    a {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      color: $black;
+      text-decoration: none;
+      background: url('../img/envelope.svg') left center no-repeat;
+      background-size: 25px;
+      padding-left: 50px;
+      border-bottom: none;
+
+      span {
+        border-bottom: 1px solid $blue;
+      }
+
+
+      &:hover {
+        color: $sub-menu-blue;
+
+        span {
+          border-bottom-color: transparent;
+        }
+
+      }
+
+    }
+
+  }
+
+  .contact__address {
+    margin: 20px 0;
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      color: $black;
+      text-decoration: none;
+      background: url('../img/placeholder.svg') left center no-repeat;
+      background-size: 20px;
+      padding-left: 50px;
+      margin: 0;
+    }
+
+    span {
+      color: #8b8a8a;
+      font-size: 1.125rem;
+    }
+
+  }
+
+  .contact__time {
+    margin: 18px 0;
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      color: $black;
+      text-decoration: none;
+      background: url('../img/clock.svg') left center no-repeat;
+      background-size: 22px;
+      margin: 0;
+      padding: 2px 0 2px 50px;
+    }
+
+    span {
+      color: #8b8a8a;
+      font-size: 1.125rem;
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .contact {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  .contact {
+
+    .contact__flex {
+      flex-direction: column;
+    }
+
+    .contact__img {
+      margin-right: 0;
+
+      img {
+        width: 100%;
+      }
+
+    }
+
+
+  }
+
+}

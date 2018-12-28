@@ -1,0 +1,38 @@
+.back {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+
+  a {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    text-decoration: none;
+    color: $black;
+    margin: 10px 0;
+    border-bottom: none !important;
+
+    span {
+      border-bottom: 1px solid $blue;
+    }
+
+    .back__arrow {
+      font-size: 1rem;
+      color: $blue;
+      margin-right: 5px;
+    }
+
+    &:hover {
+      color: $blue;
+
+      span {
+        border-bottom-color: transparent;
+      }
+
+    }
+
+  }
+
+}

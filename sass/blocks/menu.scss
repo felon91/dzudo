@@ -1,0 +1,263 @@
+.menu {
+  box-shadow: 1px 2px 2px rgba(0,0,0,.35);
+  background-color: $blue;
+  transition-duration: 200ms;
+
+  .menu__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      margin-right: 6px;
+      position: relative;
+      padding: 0 10px;
+      box-sizing: border-box;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        background-color: #2f83c2;
+
+        .menu__children {
+          opacity: 1;
+          transform: rotateX(0deg);
+        }
+
+      }
+
+    }
+
+    .menu__parent {
+
+      a {
+        background: url('../img/arrow-bottom.png') right center no-repeat;
+        padding-right: 17px;
+      }
+
+    }
+
+    .menu__active {
+
+      > a {
+        border-bottom: 3px solid $black;
+      }
+
+    }
+
+    a {
+      text-decoration: none;
+      color: $white;
+      font-size: 1.125rem;
+      line-height: 1.625rem;
+      display: block;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+
+    .menu__children {
+      position: absolute;
+      left: -10px;
+      top: 100%;
+      background-color: $light-blue;
+      max-width: 350px;
+      box-sizing: border-box;
+      box-shadow: 2px 3px 3px rgba(19,26,20,.21);
+      border-top: 1px solid #000;
+      padding: 15px 0;
+      display: block;
+      min-width: 230px;
+      transition: transform .3s ease,opacity .3s ease;
+      transform: rotateY(90deg);
+      transform-origin: 50% 0 0;
+      opacity: 0;
+      will-change: opacity,transform;
+      z-index: 100;
+
+      li {
+        margin-right: 0;
+        display: block;
+        background-color: transparent;
+        padding: 0;
+      }
+
+      a {
+        background-image: none;
+        line-height: 1.875rem;
+        padding: 0 10px 0 20px;
+
+
+        &:hover {
+          color: $sub-menu-blue;
+          background-color: #2f83c2;
+        }
+
+      }
+
+    }
+
+    .menu__open {
+      width: 20px;
+      height: 20px;
+      display: none;
+      cursor: pointer;
+
+      img {
+        width: 15px;
+        transform: translateY(3px);
+        margin-left: 10px;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: 980px) {
+
+  .menu {
+
+    ul {
+
+      li {
+        margin-right: 0px;
+        padding: 0 7px;
+      }
+
+      a {
+        font-size: 1rem;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: 880px) {
+
+  .menu {
+
+    ul {
+
+      li {
+
+        &:hover {
+
+          .menu__children {
+            top: 35px;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $blue;
+    width: 100%;
+    padding: 20px 0;
+    opacity: 0;
+    height: 0;
+    z-index: -1;
+
+
+    ul {
+      display: block;
+
+      li {
+        display: block;
+
+        &:hover {
+          background-color: transparent;
+        }
+
+      }
+
+      a {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        display: inline-block;
+        padding-right: 0;
+        font-size: 1.15rem;
+        line-height: 1.85rem;
+      }
+
+      .menu__parent {
+
+        a {
+          background: none;
+        }
+
+      }
+
+      .menu__active {
+
+        > a {
+          border-bottom: none;
+        }
+
+      }
+      
+      .menu__parent--active {
+        
+        .menu__children {
+          display: block;
+        }
+        
+      }
+
+      .menu__open {
+        display: inline;
+      }
+
+      .menu__children {
+        position: static;
+        left: auto;
+        top: auto;
+        transform: rotateX(0deg);
+        opacity: 1;
+        border-top: none;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        margin-left: 15px;
+        display: none;
+
+        a {
+          padding: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+  .menu--active {
+    opacity: 1;
+    height: 100%;
+    max-height: 400px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    z-index: 11;
+  }
+
+}

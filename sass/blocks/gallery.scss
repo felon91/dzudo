@@ -1,0 +1,45 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  .gallery__element {
+    flex-basis: 31%;
+    margin: 5px 3.5% 5px 0;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+
+    a {
+      border-bottom: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+  }
+
+}
+
+@media (max-width: 580px) {
+
+  .gallery {
+
+    .gallery__element {
+      flex-basis: 48%;
+
+      &:nth-child(3n + 3) {
+        margin-right: 3.5%;
+      }
+
+      &:nth-child(2n + 2) {
+        margin-right: 0;
+      }
+
+    }
+
+  }
+
+}

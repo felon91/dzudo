@@ -1,0 +1,36 @@
+.socials-block {
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 25px;
+
+  p {
+    color: #8b8a8a;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+  }
+
+  a {
+    margin: 0 10px;
+
+    img {
+      width: 33px;
+      display: block;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+  }
+}
+
+@media (max-width: 580px) {
+
+  .socials-block {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+}

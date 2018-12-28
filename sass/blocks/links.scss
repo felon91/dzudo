@@ -1,0 +1,39 @@
+.links {
+  background-color: $white;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.15);
+  padding: 25px 0 25px 20px;
+
+  ul {
+
+  }
+
+  li {
+    padding: 5px 10px 5px 12px;
+  }
+
+  a {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    color: $blue;
+    text-decoration: none;
+
+    &:hover {
+      color: $sub-menu-blue;
+    }
+
+  }
+  
+  .links__active {
+    background-color: #f6f5f5;
+    border-right: 3px solid $black;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .links {
+    padding-left: 10px;
+  }
+
+}

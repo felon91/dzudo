@@ -1,0 +1,135 @@
+.header {
+  background-image: linear-gradient(to top, #428bca, #5bc0de);
+
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  .header__map {
+    flex-basis: calc(100% - 330px - 375px);
+    padding: 0 10px;
+    box-sizing: border-box;
+
+    a {
+      font-size: 1.125rem;
+      line-height: 1.4rem;
+      padding: 3px 0 3px 85px;
+      color: $white;
+      font-family: 'Fira Sans Condensed';
+      background: url('../img/rodina.png') left center no-repeat;
+      background-size: 70px;
+      text-decoration: none;
+      display: block;
+      max-width: 170px;
+      margin: 0 auto;
+
+      &:hover {
+        color: $sub-menu-blue;
+      }
+
+    }
+
+    span {
+      display: block;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+
+  }
+
+  .header__supports {
+    flex-basis: 375px;
+    flex-shrink: 0;
+
+    p {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      color: $white;
+      background: url('../img/supports.png') left center no-repeat;
+      padding-left: 45px;
+      font-family: 'Fira Sans Condensed';
+
+      span {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        display: block;
+      }
+
+      a {
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+          color: $sub-menu-blue;
+        }
+
+      }
+
+    }
+
+  }
+
+  .header__hamburger {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 12;
+
+    img, svg {
+      display: block;
+      width: 28px;
+      height: 28px;
+      fill: $white;
+    }
+
+    .header__close {
+      display: none;
+    }
+
+  }
+
+}
+
+@media (max-width: 960px) {
+  
+  .header {
+    
+    .header__map {
+      display: none;
+    }
+    
+  }
+  
+}
+
+@media (max-width: 768px) {
+
+  .header {
+
+    .header__supports {
+      display: none;
+    }
+
+    .header__hamburger {
+      display: block;
+    }
+
+    .header__hamburger--active {
+
+      svg {
+        display: none;
+      }
+
+      .header__close {
+        display: block;
+      }
+
+    }
+
+  }
+
+}

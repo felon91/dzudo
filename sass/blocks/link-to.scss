@@ -1,0 +1,32 @@
+.link-to {
+  margin: 10px 0;
+
+  a {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    text-decoration: none;
+    color: $black;
+    margin: 10px 0;
+    border-bottom: none !important;
+
+    .link-to__quote {
+      color: $blue;
+    }
+
+    span {
+      border-bottom: 1px solid $blue;
+      margin-right: 3px;
+    }
+
+    &:hover {
+      color: $blue;
+
+      span {
+        border-bottom-color: transparent;
+      }
+
+    }
+
+  }
+
+}

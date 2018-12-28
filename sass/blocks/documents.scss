@@ -1,0 +1,59 @@
+.documents {
+  background-color: $white;
+  padding: 5px 30px 20px 30px;
+
+  .documents__title {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+    margin: 15px 0;
+  }
+
+  .documents__block {
+    margin: 20px 0 25px;
+  }
+
+  .documents__element {
+    margin: 10px 0;
+
+    p {
+      background: url('../img/pdf.png') left center no-repeat;
+      padding-left: 40px;
+      line-height: 1.625rem;
+    }
+
+    a {
+      text-decoration: none;
+      border-bottom: 1px solid $blue;
+      line-height: 1.625rem;
+      color: $black;
+
+      &:hover {
+        border-bottom-color: transparent;
+        color: $sub-menu-blue;
+      }
+
+    }
+
+    span {
+      color: #8b8a8a;
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .documents {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .documents__title {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+
+  }
+
+}

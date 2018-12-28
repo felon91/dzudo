@@ -1,0 +1,26 @@
+.tags {
+  margin: 15px 0;
+
+  a {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    color: $green;
+    font-weight: 600;
+
+    &:hover {
+      color: $sub-menu-blue;
+
+      span {
+        border-bottom-color: transparent;
+      }
+
+    }
+
+  }
+
+  span {
+    border-bottom: 1px solid $green;
+  }
+
+}

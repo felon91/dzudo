@@ -1,0 +1,61 @@
+.dzudo-info {
+  background-color: $white;
+  height: 100%;
+  border-top: 5px solid $blue;
+  padding: 15px;
+  text-align: center;
+  box-sizing: border-box;
+
+  .dzudo-info__title {
+    font-size: 1.375rem;
+    line-height: 1.5625rem;
+    font-weight: 600;
+  }
+
+  .dzudo-info__element {
+    margin: 20px 0;
+
+    p {
+      font-size: 2.5rem;
+      color: $blue;
+      font-weight: 700;
+    }
+
+    span {
+      font-size: 1rem;
+      line-height: 1.375rem;
+      display: block;
+      font-weight: 400;
+      color: $black;
+    }
+
+  }
+
+  .dzudo-info__map {
+    text-align: center;
+    margin-top: 35px;
+
+    img {
+      display: block;
+      margin: 20px auto;
+    }
+
+    a {
+      text-decoration: none;
+
+      span {
+        @include btn() {
+          font-size: 1rem;
+          line-height: 1.125rem;
+          width: 191px;
+          padding: 10px 30px;
+          margin: 15px auto;
+          box-sizing: border-box;
+        };
+      }
+
+    }
+
+  }
+  
+}

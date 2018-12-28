@@ -1,0 +1,56 @@
+.last-news {
+  margin: 45px 0;
+
+  .last-news__top {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .last-news__tags {
+    margin: 0;
+  }
+
+  .last-news__title {
+    font-size: 1.625rem;
+    line-height: 2.1875rem;
+    font-weight: 600;
+    margin-right: 20px;
+  }
+
+
+  .last-news__element {
+    margin: 10px 0;
+
+    a {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      text-decoration: none;
+      color: #8b8a8a;
+
+      &:hover {
+
+        span {
+          color: $sub-menu-blue;
+        }
+
+      }
+
+    }
+
+    span {
+      color: $black;
+    }
+
+  }
+
+
+  .last-news__btn {
+    @include btn() {
+      max-width: 350px;
+      margin-top: 25px;
+      padding: 11px 0;
+    };
+  }
+
+}

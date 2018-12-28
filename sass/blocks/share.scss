@@ -1,0 +1,41 @@
+.share {
+  display: flex;
+  align-items: center;
+
+  p {
+    color: #8b8a8a;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-right: 5px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  div {
+    
+    ul {
+      margin: 0 !important;
+
+      li {
+        padding-left: 0 !important;
+
+        &::before {
+          display: none !important;
+        }
+
+      }
+      
+    }
+    
+    a {
+      border-bottom: none !important;
+
+      span {
+        border-bottom: none !important;
+      }
+
+    }
+
+  }
+
+}

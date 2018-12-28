@@ -1,0 +1,47 @@
+.table {
+  margin: 25px 0;
+  overflow: auto;
+
+  .table__title {
+    font-weight: 600;
+    font-size: 1.25rem !important;
+    line-height: 2.0625rem !important;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+    border: 1px solid #e1f3fd;
+    min-width: 500px;
+
+    tr {
+      
+      &:nth-child(odd) {
+        background-color: #f0f7fb;
+      }
+
+      &:first-child {
+        background-color: #5abddd;
+
+        td {
+          border: 1px solid #5abddd;
+          color: $white;
+        }
+
+      }
+
+      td {
+        font-size: 1.125rem;
+        line-height: 2.0625rem;
+        color: $black;
+        padding: 8px 0 8px 15px;
+        border: 1px solid #e1f3fd;
+        box-sizing: border-box;
+      }
+
+    }
+
+  }
+
+}

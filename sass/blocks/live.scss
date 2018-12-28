@@ -1,0 +1,28 @@
+.live {
+  margin: 45px 0;
+
+  .live__title {
+    font-size: 1.75rem;
+    line-height: 1.875rem;
+    font-weight: 600;
+    margin: 15px 0 25px;
+  }
+
+  .live__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+@media (max-width: 860px) {
+
+  .live {
+
+    .live__block {
+      flex-direction: column;
+    }
+
+  }
+
+}
