@@ -185,7 +185,17 @@ $(document).ready(function () {
 
   $('select').styler();
   $(".mask").mask("+7 (999) 999-99-99");
+  const datepicker = new Datepickk({
+    container: document.querySelector('.datepicker__block'),
+    inline:true,
+    range: true,
+    tooltips: {
+      date: new Date(),
+      text: 'Текст'
+    },
+  });
 
+  datepicker.lang = 'ru';
 });
 
 $(window).resize(function () {

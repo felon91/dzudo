@@ -1,0 +1,43 @@
+.datepicker {
+
+  .datepicker__title {
+    font-size: 1.75rem;
+    line-height: 1.875rem;
+    font-weight: 600;
+    margin: 0 0 25px;
+  }
+
+  .datepicker__block {
+    margin-bottom: 28px;
+  }
+
+  .datepicker__link {
+    font-size: 1.25rem;
+    line-height: 1;
+    margin: 15px 0;
+
+    a {
+      text-decoration: none;
+      color: $black;
+
+      &:hover {
+        color: $sub-menu-blue;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: 580px) {
+
+  .datepicker {
+
+    .datepicker__link {
+      font-size: 1.1rem;
+    }
+
+  }
+
+}
