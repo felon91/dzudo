@@ -1,0 +1,109 @@
+$bgHeader: #c4c4c4;
+
+.medalist {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  overflow: auto;
+  text-align: center;
+  margin: 30px 0;
+
+  .medalist__element {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $white;
+
+    &:nth-of-type(even) {
+      background-color: #f5f5f5;
+    }
+
+    &:first-child {
+      background-color: $bgHeader;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
+      display: flex;
+      margin-bottom: 2px;
+    }
+
+  }
+
+  .medalist__type {
+    background-image: -webkit-linear-gradient( 0deg, rgb(3,146,207) 0%, rgb(255,255,255) 100%);
+    padding: 10px 0;
+    font-weight: 600;
+  }
+
+  .medalist__result {
+    padding: 10px;
+    box-sizing: border-box;
+    flex-basis: 15%;
+  }
+
+  .medalist__gold, .medalist__silver, .medalist__bronze {
+    width: 31px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0 auto;
+
+    p {
+      line-height: 1.125rem;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 3.5px 0;
+    }
+
+  }
+
+  .medalist__gold {
+    border: 3px solid $gold;
+  }
+
+  .medalist__silver {
+    border: 3px solid $silver;
+  }
+
+  .medalist__bronze {
+    border: 3px solid $bronze;
+  }
+
+  .medalist__name {
+    padding: 10px 0;
+    flex-grow: 1;
+
+    a {
+      color: $black;
+      text-decoration: none;
+
+      &:hover {
+        color: $sub-menu-blue;
+      }
+
+    }
+
+  }
+
+  .medalist__weight {
+    padding: 10px;
+    box-sizing: border-box;
+    flex-basis: 25.5%;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .medalist {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  .medalist__wrap {
+    min-width: 530px;
+  }
+
+}

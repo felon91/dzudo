@@ -1,0 +1,82 @@
+$bgHeader: #c4c4c4;
+
+.master {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  overflow: auto;
+  margin: 30px 0;
+
+  .master__number {
+    flex-basis: 9.6%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .master__men {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:nth-child(odd) {
+      background-color: #f5f5f5;
+    }
+
+    &:first-child {
+      background-color: $bgHeader;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
+      display: flex;
+      margin-bottom: 2px;
+    }
+
+  }
+
+  .master__name {
+    padding: 10px 0;
+    flex-basis: 23%;
+
+    a {
+      color: $black;
+      text-decoration: none;
+
+      &:hover {
+        color: $sub-menu-blue;
+      }
+
+    }
+
+  }
+
+  .master__year {
+    padding: 10px 0;
+    flex-basis: 23%;
+  }
+
+  .master__zvanie {
+    padding: 10px 0;
+    flex-basis: 11.5%;
+  }
+
+  .master__team {
+    padding: 10px 0;
+    flex-basis: 21%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .master {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  .master__wrap {
+    min-width: 530px;
+  }
+
+}
