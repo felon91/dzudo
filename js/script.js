@@ -203,6 +203,117 @@ $(document).ready(function () {
   }
 
 
+  const dateLink = document.querySelector(`.d-header > p`);
+  if(dateLink) {
+    dateLink.addEventListener(`click`, function (e) {
+      e.preventDefault();
+      if(
+          this.querySelector(`.d-month`).textContent == `Декабрь`
+          &&
+          this.querySelector(`.d-year`).textContent == `18`
+      ) {
+        document.location.href = `http://judo66.ru/`;
+      }
+
+      if(
+          this.querySelector(`.d-month`).textContent == `Январь`
+          &&
+          this.querySelector(`.d-year`).textContent == `19`
+      ) {
+        document.location.href = `http://judo66.ru/january`;
+      }
+
+      if(
+          this.querySelector(`.d-month`).textContent == `Февраль`
+          &&
+          this.querySelector(`.d-year`).textContent == `19`
+      ) {
+        document.location.href = `http://judo66.ru/february`;
+      }
+
+      if(
+          this.querySelector(`.d-month`).textContent == `Март`
+          &&
+          this.querySelector(`.d-year`).textContent == `19`
+      ) {
+        document.location.href = `http://judo66.ru/march`;
+      }
+
+      if(
+          this.querySelector(`.d-month`).textContent == `Апрель`
+          &&
+          this.querySelector(`.d-year`).textContent == `19`
+      ) {
+        document.location.href = `http://judo66.ru/april`;
+      }
+
+      if(
+          this.querySelector(`.d-month`).textContent == `Май`
+          &&
+          this.querySelector(`.d-year`).textContent == `19`
+      ) {
+        document.location.href = `http://judo66.ru/may`;
+      }
+
+      if(
+          this.querySelector(`.d-month`).textContent == `Июнь`
+          &&
+          this.querySelector(`.d-year`).textContent == `19`
+      ) {
+        document.location.href = `http://judo66.ru/june`;
+      }
+
+      if(
+          this.querySelector(`.d-month`).textContent == `Июль`
+          &&
+          this.querySelector(`.d-year`).textContent == `19`
+      ) {
+        document.location.href = `http://judo66.ru/july`;
+      }
+
+      if(
+          this.querySelector(`.d-month`).textContent == `Август`
+          &&
+          this.querySelector(`.d-year`).textContent == `19`
+      ) {
+        document.location.href = `http://judo66.ru/august`;
+      }
+
+      if(
+          this.querySelector(`.d-month`).textContent == `Сентябрь`
+          &&
+          this.querySelector(`.d-year`).textContent == `19`
+      ) {
+        document.location.href = `http://judo66.ru/september`;
+      }
+
+      if(
+          this.querySelector(`.d-month`).textContent == `Октябрь`
+          &&
+          this.querySelector(`.d-year`).textContent == `19`
+      ) {
+        document.location.href = `http://judo66.ru/october`;
+      }
+
+      if(
+          this.querySelector(`.d-month`).textContent == `Ноябрь`
+          &&
+          this.querySelector(`.d-year`).textContent == `19`
+      ) {
+        document.location.href = `http://judo66.ru/november`;
+      }
+
+      if(
+          this.querySelector(`.d-month`).textContent == `Декабрь`
+          &&
+          this.querySelector(`.d-year`).textContent == `19`
+      ) {
+        document.location.href = `http://judo66.ru/december`;
+      }
+
+    });
+  }
+
 });
 
 $(window).resize(function () {

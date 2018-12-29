@@ -294,6 +294,7 @@
   overflow: hidden;
   pointer-events: none;
   transition: height .2s ease;
+  display: none;
 }
 #Datepickk .d-month-picker.d-show {
   height: 44px;
@@ -323,6 +324,7 @@
   overflow: hidden;
   pointer-events: none;
   transition: height .2s ease;
+  display: none;
 }
 #Datepickk .d-year-picker.d-show {
   height: 44px;
