@@ -185,7 +185,10 @@ $(document).ready(function () {
 
   $('select').styler();
   $(".mask").mask("+7 (999) 999-99-99");
-  $(".master__table").freezeHeader();
+
+  if(window.innerWidth >= 560) {
+    $(".master__table").freezeHeader();
+  }
 
   const calendar = document.querySelector('.datepicker__block');
 
